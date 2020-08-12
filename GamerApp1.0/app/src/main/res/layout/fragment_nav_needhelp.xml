@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NeedHelp.nav_needhelp">
+
+    <TextView
+        android:id="@+id/emailid2"
+        android:layout_width="304dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="44dp"
+        android:gravity="clip_vertical|center_vertical"
+        android:text="info@gamerapp.com"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/img_mail"
+        app:layout_constraintTop_toBottomOf="@+id/nh_title" />
+
+    <TextView
+        android:id="@+id/customercare"
+        android:layout_width="304dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="100dp"
+        android:gravity="clip_vertical|center_vertical"
+        android:text="+14168398741"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toEndOf="@+id/img_mail"
+        app:layout_constraintTop_toBottomOf="@+id/nh_title" />
+
+    <TextView
+        android:id="@+id/nh_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="For any queries, feel free to contact us on:"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textColorLink="@color/cardview_dark_background"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hline0"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_globe"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/img_usermanual"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_book_foreground"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/usermanual"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hline0"
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@drawable/ic_book_foreground" />
+
+    <TextView
+        android:id="@+id/usermanual"
+        android:layout_width="296dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center_vertical"
+        android:text="User Manual v1.0"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hline0" />
+
+    <ImageView
+        android:id="@+id/img_globe"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@mipmap/ic_globe"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_call"
+        tools:src="@mipmap/ic_globe" />
+
+    <TextView
+        android:id="@+id/nh_weblink"
+        android:layout_width="304dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="48dp"
+        android:gravity="clip_vertical|center_vertical"
+        android:text="www.gamerapp.com"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toEndOf="@+id/img_mail"
+        app:layout_constraintTop_toBottomOf="@+id/customercare" />
+
+    <ImageView
+        android:id="@+id/img_call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/contactus"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_mail"
+        tools:src="@drawable/contactus" />
+
+    <ImageView
+        android:id="@+id/img_mail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_mail_foreground"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nh_title"
+        tools:src="@drawable/ic_mail_foreground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

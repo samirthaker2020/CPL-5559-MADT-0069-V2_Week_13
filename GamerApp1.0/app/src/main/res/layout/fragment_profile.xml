@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_appicon_background"
+    tools:context=".ui.Profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/txtprofile_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/txtprofile_image"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle1"
+        android:foreground="@drawable/circle1"
+        android:scaleType="fitXY"
+
+        app:layout_constraintBottom_toTopOf="@+id/txtprofile_fname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprofile_username"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/txtprofile_fname"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+
+        android:gravity="center|left"
+        android:text="First Name:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprofile_image" />
+
+    <TextView
+        android:id="@+id/txtprofile_emailid"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|left"
+        android:text="Date Of Birth:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprofile_dob"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <EditText
+        android:id="@+id/editText_lname"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtprofile_lname"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fname" />
+
+    <TextView
+        android:id="@+id/txtprofile_contactno"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|left"
+        android:text="Contact No:"
+        android:inputType="numberSigned"
+        android:textColor="@color/cardview_dark_background"
+
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprofile_lname" />
+
+    <ToggleButton
+        android:id="@+id/btn_update"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/oval"
+        android:checked="false"
+        android:text="ToggleButton"
+        android:textOff="UPDATE"
+        android:textOn="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_dob"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/editText_dob"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtprofile_emailid"
+        app:layout_constraintTop_toBottomOf="@+id/editText_email"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtprofile_dob"
+        app:layout_constraintTop_toBottomOf="@+id/editText_contactno" />
+
+    <TextView
+        android:id="@+id/txtprofile_lname"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|left"
+
+        android:text="Last Name:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprofile_fname" />
+
+    <EditText
+        android:id="@+id/editText_fname"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:enabled="false"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:fontFamily="monospace"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtprofile_fname"
+        app:layout_constraintTop_toBottomOf="@+id/txtprofile_username" />
+
+    <TextView
+        android:id="@+id/txtprofile_dob"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center|left"
+        android:text="Email:"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprofile_contactno" />
+
+    <Button
+        android:id="@+id/btnupload"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/oval"
+        android:enabled="false"
+        android:padding="10dp"
+        android:text="Upload"
+        android:textColor="@color/ic_appicon_background"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_fname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toEndOf="@+id/txtprofile_image"
+        app:layout_constraintTop_toBottomOf="@+id/btnuploadimage"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <Button
+        android:id="@+id/btnuploadimage"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/oval"
+        android:padding="10dp"
+        android:text="Select Image"
+        android:textColor="@color/ic_appicon_background"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toEndOf="@+id/txtprofile_image"
+        app:layout_constraintTop_toBottomOf="@+id/txtprofile_username" />
+
+    <EditText
+        android:id="@+id/editText_contactno"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Enter Phone Number"
+        android:inputType="number|textVisiblePassword"
+        android:maxLength="10"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtprofile_contactno"
+        app:layout_constraintTop_toBottomOf="@+id/editText_lname" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.gamerapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/home_fragment">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.gamerapp.ui.ReviewHistory.ReviewHistoryFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_reviewhistory">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.gamerapp.ui.Profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_reviewhistory"
+        android:name="com.example.gamerapp.ui.ReviewHistory.ReviewHistoryFragment"
+        android:label="@string/menu_reviewhistory"
+        tools:layout="@layout/fragment_reviewhistory" />
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="com.example.gamerapp.ui.AboutUs.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.gamerapp.ui.Logout.NavLogout"
+        android:label="fragment_nav_logout"
+        tools:layout="@layout/fragment_nav_logout" />
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.example.gamerapp.ui.ContactUs.nav_contactus"
+        android:label="fragment_nav_contactus"
+        tools:layout="@layout/fragment_nav_contactus" />
+    <fragment
+        android:id="@+id/nav_needhelp"
+        android:name="com.example.gamerapp.ui.NeedHelp.nav_needhelp"
+        android:label="fragment_nav_needhelp"
+        tools:layout="@layout/fragment_nav_needhelp" />
+    <fragment
+        android:id="@+id/nav_mylocation"
+        android:name="com.example.gamerapp.ui.Mylocation.MyLocation"
+        android:label="fragment_my_location"
+        tools:layout="@layout/fragment_my_location" />
+
+</navigation>
